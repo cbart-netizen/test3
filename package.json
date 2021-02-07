@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build  && gh-pages -d main",
+    "deploy": "gatsby build  && gh-pages -d public -b main -r https://$GH_TOKEN@github.com/cbart-netizen/test3.git",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
